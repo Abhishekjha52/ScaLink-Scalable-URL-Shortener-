@@ -2,7 +2,6 @@ const express  = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config();
-console.log("Loaded MONGO URI:", process.env.MONGO);
 // Connect to DB
 mongoose
   .connect(process.env.MONGO)
