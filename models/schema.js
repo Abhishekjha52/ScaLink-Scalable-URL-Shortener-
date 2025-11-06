@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const shortid = require('shortid');
+import mongoose from 'mongoose';
+import {nanoid} from 'nanoid';
 
 const urlSchema = new mongoose.Schema({
 
@@ -19,4 +19,4 @@ const urlSchema = new mongoose.Schema({
 );
 
 const URL = mongoose.model('url', urlSchema);
-module.exports = URL;
+export default URL;
